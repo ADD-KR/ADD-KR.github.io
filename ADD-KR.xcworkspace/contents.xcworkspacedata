@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "App Frameworks">
+      <FileRef
+         location = "group:App Frameworks/Foundation_k">
+      </FileRef>
+      <FileRef
+         location = "group:App Frameworks/UIKit_k">
+      </FileRef>
+   </Group>
+</Workspace>
