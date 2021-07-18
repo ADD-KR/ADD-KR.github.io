@@ -4,10 +4,6 @@
 
 ## Overview
 
-> 최근 수정일: `2021-03-06`
->
-> [원문 링크](https://developer.apple.com/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background/extending_your_app_s_background_execution_time)
-
 앱이 백그라운드에서 실행되는 시간을 연장하는 것은 앱이 중요한 작업을 수행하기에 충분한 시간을 보장합니다. 작업이 더 많은 백그라운드 실행 시간을 요구한다면, [Background Tasks](https://developer.apple.com/documentation/backgroundtasks)를 사용하세요.
 
 앱이 백그라운드에 진입할 때, 시스템은 앱델리게이트의 [applicationDidEnterBackground(_:)](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1622997-applicationdidenterbackground)를 호출합니다. 이 메서드는 작업을 수행하고 반환하는데 5초가 소요됩니다. 메서드가 반환되자마자, 시스템은 앱을 suspended 상태로 전환합니다. 대부분의 앱들이 중요한 작업을 수행하기에 5초면 충분하지만, 더 많은 시간이 필요하다면, UIKit에게 앱의 실행 시간 연장을 요청할 수 있습니다.
