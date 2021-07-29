@@ -10,9 +10,7 @@ public class UIView {
 
   /// 블록 객체를 사용해 뷰를 애니메이팅하기 위한 옵션
   @available(iOS 4.0, macCatalyst 13.0, tvOS 9.0, *)
-  public struct AnimationOptions: OptionSet {
-
-    public var rawValue: UInt
+  public struct AnimationOptions {
 
     /// 커밋할 때, (commit time) 서브뷰를 배치하여 부모와 함께 애니메이션되도록 합니다.
     public static var layoutSubviews: UIView.AnimationOptions = Self(1 << 0)
@@ -64,11 +62,7 @@ public class UIView {
     /// 초당 60 프레임의 프레임 속도
     public static var preferredFramesPerSecond60: UIView.AnimationOptions = Self(3 << 24)
 
-    private init(_ rawValue: Int) { self.rawValue = UInt(rawValue)}
-    public init(rawValue: UInt) { self.rawValue = rawValue }
-
-    public mutating func formUnion(_ other: __owned UIView.AnimationOptions) { }
-    public mutating func formIntersection(_ other: UIView.AnimationOptions) { }
-    public mutating func formSymmetricDifference(_ other: __owned UIView.AnimationOptions) { }
+    public init(rawValue: UInt) {  }
+    private init(_ rawValue: Int) { }
   }
 }

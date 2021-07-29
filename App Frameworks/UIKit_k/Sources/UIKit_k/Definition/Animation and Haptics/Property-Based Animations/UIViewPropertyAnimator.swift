@@ -7,7 +7,6 @@
 
 import Foundation
 
-/// 뷰 변경 사항을 애니메이션화하고 해당 애니메이션의 동적 수정을 허용하는 클래스
 public class UIViewPropertyAnimator: NSObject, NSCopying {
 
   // Initializing a Property Animator

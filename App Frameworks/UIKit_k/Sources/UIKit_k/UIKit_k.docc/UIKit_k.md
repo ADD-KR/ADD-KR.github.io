@@ -15,4 +15,5 @@ Empty
 ### User Interface
 
 - <doc:Views-and-Controls>
+- <doc:Animation-and-Haptics>
 

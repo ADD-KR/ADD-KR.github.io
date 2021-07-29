@@ -4,10 +4,6 @@ foreground이나 background에 있을 때 시스템 notification에 응답하고
 
 ## Overview
 
-> 최근 수정일: `2021-03-06`
-> 
-> [원문링크](https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle)
-
 앱의 현재 상태에 따라 언제든지 할 수 있는 작업과 할 수 없는 작업이 결정됩니다. 예를 들어, foreground 앱은 사용자의 주의를 끌기 때문에, CPU를 포함한 시스템 리소스에 우선순위를 갖습니다. 이와 반대로, background 앱은 화면 밖에 있기 때문에 최소한의 작업만을 수행해야하며, 가급적 아무것도 수행하지 않아야합니다. 앱이 상태에서 다른 상태로 변경되면, 그에 따라 동작을 조정해야합니다.
 
 앱의 상태가 변경될 때, UIKit은 적절한 델리게이트 객체의 메서드를 호출하여 알립니다:
