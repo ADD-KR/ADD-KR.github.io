@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 10.0, macCatalyst 13.0, tvOS 10.0, *)
 public class UIViewPropertyAnimator: NSObject, NSCopying {
 
   // Initializing a Property Animator
