@@ -84,9 +84,3 @@ Date는 ``NSDate`` 클래스와 연결됩니다. Objective-C API와 상호작용
 
 - ``NSDate``
 - ``ReferenceType``
-
-## See Also
-
-### Date Representations
-
-- ``TimeInterval``
