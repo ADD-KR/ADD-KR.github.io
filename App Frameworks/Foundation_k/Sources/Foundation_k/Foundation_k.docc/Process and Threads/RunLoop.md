@@ -28,7 +28,7 @@ RunLoop의 관점에서 보면, ``Timer`` 객체는 "입력"이 아닙니다. �
 
 ### Managing Timers
 
-- ``add(_:forMode:)-8dx6e``
+- ``add(_:forMode:)-15b07``
 
 ### Managing Ports
 

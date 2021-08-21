@@ -27,8 +27,8 @@ iOS 7과 그 이후 버전, macOS 10.9와 그 이후 버전에서 타이머의 �
 타이머는 한 번에 하나의 런 루프에서만 등록할 수 있지만, 해당 런 루프 내에서 여러 런 루프 모드에 추가할 수 있습니다. 다음은 타이머를 생성하는 세가지 방법입니다.
 
 - 현재 런 루프의 default 모드에 타이머를 스케줄하고 생성하려면 ``scheduledTimer(timeInterval:invocation:repeats:)`` 또는 ``scheduledTimer(timeInterval:target:selector:userInfo:repeats:)`` 클래스 메서드를 사용하세요.
-- 런 루프에 스케줄링하지 않고 타이머 객체를 생성하려면 ``init(timeInterval:invocation:repeats:)`` 또는 ``init(timeInterval:target:selector:userInfo:repeats:)`` 클래스 메서드를 사용하세요.(생성 후에 반드시 해당하는 런 루프 객체의 ``RunLoop/add(_:forMode:)-8dx6e`` 메서드를 호출해 런 루프에 타이머를 추가해야 합니다.)
-- 타이머를 할당하고 초기화하려면 ``init(fireAt:interval:target:selector:userInfo:repeats:)`` 메서드를 사용하세요.(생성 후에 반드시 해당하는 런 루프 객체의  ``RunLoop/add(_:forMode:)-8dx6e`` 메서드를 호출해 런 루프에 타이머를 추가해야 합니다.)
+- 런 루프에 스케줄링하지 않고 타이머 객체를 생성하려면 ``init(timeInterval:invocation:repeats:)`` 또는 ``init(timeInterval:target:selector:userInfo:repeats:)`` 클래스 메서드를 사용하세요.(생성 후에 반드시 해당하는 런 루프 객체의 ``RunLoop/add(_:forMode:)-15b07`` 메서드를 호출해 런 루프에 타이머를 추가해야 합니다.)
+- 타이머를 할당하고 초기화하려면 ``init(fireAt:interval:target:selector:userInfo:repeats:)`` 메서드를 사용하세요.(생성 후에 반드시 해당하는 런 루프 객체의  ``RunLoop/add(_:forMode:)-15b07`` 메서드를 호출해 런 루프에 타이머를 추가해야 합니다.)
 
 한 번 런 루프에 스케줄된 타이머는 무효화 되기 전까지 특정 간격에 작동됩니다. 반복하지 않는 타이머는 작동 후 즉시 무효화됩니다. 그러나 반복하는 타이머의 경우 반드시 ``invalidate()`` 메서드를 호출하여 타이머 객체를 무효화해야 합니다. 이 메서드를 호출하면 현재 런 루프에서 타이머를 제거할 것을 요청합니다. 따라서 항상 타이머를 install한 스레드와 같은 스레드에서 ``invalidate()`` 메서드를 호출해야 합니다. 타이머를 무효화하면 더 이상 런 루프에 영향을 미치지 않도록 타이머가 즉시 비활성화됩니다. 그런 다음 ``invalidate()`` 메서드가 반환되기 직전 또는 이후에 런 루프에서 타이머(및 타이머에 대한 강한 참조)가 제거됩니다. 무효화된 타이머 객체는 재사용할 수 없습니다.
 
