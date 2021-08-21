@@ -4,25 +4,25 @@
 import PackageDescription
 
 let package = Package(
-  name: "AVFAudio_k",
+  name: "AVFoundation_k",
   platforms: [
-    .iOS("14.5"),
-    .macOS("11.3"),
-    .macCatalyst("14.5"),
-    .tvOS("14.5"),
-    .watchOS("7.4")
+    .iOS("2.2"),
+    .macOS("10.9"),
+    .macCatalyst("13.0"),
+    .tvOS("9.0"),
+    .watchOS("3.0")
   ],
   products: [
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
-      name: "AVFAudio_k",
-      targets: ["AVFAudio_k"])
+      name: "AVFoundation_k",
+      targets: ["AVFoundation_k"])
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
     // Targets can depend on other targets in this package, and on products in packages this package depends on.
     .target(
-      name: "AVFAudio_k",
+      name: "AVFoundation_k",
       dependencies: [])
   ]
 )
