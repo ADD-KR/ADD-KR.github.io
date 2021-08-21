@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Media"
+      name = "Media">
+      <FileRef
+         location = "group:/Users/daeunkim/Documents/GitHub/ADD-KR/Media/AVFAudio_k">
+      </FileRef>
+   </Group>
+   <Group
       location = "container:"
       name = "App Frameworks">
       <FileRef
