@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
   name: "AVFoundation_k",
   platforms: [
-    .iOS("2.2"),
+    .iOS("7"),
     .macOS("10.9"),
     .macCatalyst("13.0"),
     .tvOS("9.0"),

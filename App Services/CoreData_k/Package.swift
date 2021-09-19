@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
   name: "CoreData_k",
   platforms: [
-    .iOS("3.0"),
+    .iOS("7"),
     //      .macOS("10.4"),
     .macCatalyst("13.0"),
     .tvOS("9.0"),
