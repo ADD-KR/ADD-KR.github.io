@@ -29,7 +29,7 @@ DocC는 Swift 컴파일러의 공개 API 정보를 문서 카탈로그의 내용
 ![figure3](Documenting-a-Swift-Framework-or-Package-figure3.png)
 
 다음을 포함하려면 문서 카탈로그를 사용하세요:
-- 프레임워크를 소개하고 최상위 심볼을 정렬하는 랜딩 페이지와 심볼의 프로퍼티 및 메서드에 대한 커스텀 구성을 제공하는 extension 파일. 더 자세한 정보는 [Adding Structure to Your Documentation Pages](https://developer.apple.com/documentation/xcode/adding-structure-to-your-documentation-pages)에서 확인하세요.
+- 프레임워크를 소개하고 최상위 심볼을 정렬하는 랜딩 페이지와 심볼의 프로퍼티 및 메서드에 대한 커스텀 구성을 제공하는 extension 파일. 더 자세한 정보는 <doc:Adding-Structure-to-Your-Documentation-Pages>에서 확인하세요.
 - in-source 주석을 보완하는 extension 파일과 개념적인 콘텐츠를 지원하는 article. 더 자세한 정보는 [Adding Supplemental Content to a Documentation Catalog](https://developer.apple.com/documentation/xcode/adding-supplemental-content-to-a-documentation-catalog)에서 확인하세요.
 - 단계별 인터랙티브 콘텐츠를 통해 개발자에게 프레임워크의 API를 가르칠 수 있는 튜토리얼. 더 자세한 정보는 [Building an Interactive Tutorial](https://developer.apple.com/documentation/DocC/building-an-interactive-tutorial)에서 확인하세요.
 - 문서에서 사용할 이미지 및 비디오와 같은 리소스 파일
