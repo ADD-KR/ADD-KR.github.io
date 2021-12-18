@@ -20,7 +20,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 API를 사용하는 사람들이 API를 더 잘 이해할 수 있도록 아래 섹션의 단계에 따라 프로젝트의 공개 심볼에 문서 주석을 추가하세요. DocC는 이 주석을 컴파일하고, 사용자와 공유하는 형식화된 문서를 생성합니다.
 
-### 각 심볼에 대한 기본 설명 추가
+### Add a Basic Description for Each Symbol
 
 훌륭한 문서를 작성하기 위한 첫 번째 단계는 단일 문장 초록 또는 요약을 추가하고, 필요한 경우 *Discussion* 섹션을 프레임워크의 각 공개 심볼에 추가하는 것입니다. 
 
@@ -73,7 +73,7 @@ Discussion 섹션을 추가한 후, Quick Help를 호출하여 업데이트된 �
 
 Discussion 섹션에 대한 콘텐츠를 작성할 때, *documentation markup*을 사용하세요. 자세한 정보는 <doc:Formatting-Your-Documentation-Content>를 확인하세요.
 
-### 메서드의 매개변수 설명
+### Describe the Parameters of a Method
 
 매개변수를 가진 메서드의 경우, 요약 바로 아래에 해당 매개변수를 문서화하거나 Discussion 섹션에 문서화하세요(Discussion 섹션을 포함한다면). 매개변수의 목적과 필요한 경우, 허용되는 값의 범위에 대해 설명하세요.
 
@@ -100,7 +100,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 ![figure4](Writing-Symbol-Documentation-in-Your-Source-Files-figure4)
 
-### 매서드의 반환 값 설명
+### Describe the Return Value of a Method
 
 값을 반환하는 메서드의 경우 문서 주석에 *Returns* 섹션을 포함하여 반환된 값을 설명합니다. 반환 값이 옵셔널인 경우, 메서드가 `nil`을 반환하는 시점에 대한 정보를 제공하세요.
 
@@ -120,7 +120,7 @@ DocC가 생성한 심볼 레퍼런스 페이지와 Xcode의 Quick Help에서 Ret
 
 ![figure5](Writing-Symbol-Documentation-in-Your-Source-Files-figure5)
 
-### 메서드의 Thrown 에러 설명
+### Describe the Thrown Errors of a Method
 
 메서드가 에러를 던질 수 있는 경우, 문서 주석에 *Throws* 섹션을 추가하세요. 메서드가 에러를 발생시키는 상황을 설명하고, 가능한 에러 타입을 나열하세요.
 
@@ -139,7 +139,7 @@ Throws 섹션은 심볼의 레퍼런스 페이지, Quick Help 팝업 및 Command
 
 ![figure6](Writing-Symbol-Documentation-in-Your-Source-Files-figure6)
 
-### 심볼 문서를 위한 풍부한 경험 생성
+### Create a Richer Experience for Your Symbol Documentation
 
 이전에 언급한 각 섹션을 포함하는 문서 주석은 다음 예제와 같이 단일 소스 주석보다 개발자에게 훨씬 더 많은 정보를 제공합니다.
 

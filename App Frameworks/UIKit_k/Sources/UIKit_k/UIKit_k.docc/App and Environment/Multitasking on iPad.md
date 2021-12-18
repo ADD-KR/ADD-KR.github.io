@@ -12,7 +12,6 @@ iPadOS 13 이상에서는 [UIApplicationSupportsMultipleScenes](https://develope
 
 ## Topics
 
-
-### Scene 관리
+### Scene Management
 
 - <doc:Scenes>

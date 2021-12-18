@@ -63,6 +63,7 @@ Xcode > Developer Documentation의 구조를 따릅니다.
 -  `<doc:> 키워드를 사용했을 때 콜론(:) 뒤의 텍스트 + figure + 문서 내에서 이미지 순서`를 이미지 이름으로 사용하세요.
   - Appearance 모드에 따라 이미지 변경이 필요한 경우에는 확장자 앞에 `~dark`, `~light` 키워드를 사용하세요.
     - 애플 홈페이지에서 다운로드한 이미지 이름에 `~dark` 또는 `~light` 키워드가 포함된 경우에만 시스템 설정을 변경해 두 이미지 모두 다운로드한 후, 리소스로 추가하면 됩니다.
+    - 반드시 모든 Appearance 모드를 지원할 필요는 없으나, 기본적으로는 dark 모드를 사용해야 합니다.
   - ex) Distributing-Documentation-to-External-Developers-figure2~light.png
 
 ### 링킹

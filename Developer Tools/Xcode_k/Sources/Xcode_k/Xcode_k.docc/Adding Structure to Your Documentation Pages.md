@@ -12,7 +12,7 @@
 
 더 자세한 내용은 <doc:Writing-Symbol-Documentation-in-Your-Source-Files>를 참고하세요.
 
-### 문서의 랜딩 페이지를 커스텀하세요
+### Customize Your Documentation’s Landing Page
 
 *랜딩 페이지*는 프레임워크에 대한 개요를 제공하고, 중요한 용어를 소개하며, 사용자의 학습 경로를 쉽게 하기 위해 *문서 카탈로그* 내의 리소스를 구성합니다. 이는 프레임워크의 주요 기능에 대해 논의하고, 사용자가 프레임워크를 사용하고 싶어할 때 동기를 부여할 수 있는 기회입니다.
 
@@ -54,7 +54,7 @@ Catalog sloths you find in nature and create new adorable virtual sloths.
 
 커스텀 랜딩 페이지는 풍부한 콘텐츠를 제공하는 것 외에도 문서 계층 구조의 최상위 기호 및 기타 콘텐츠 구성을 제공합니다.
 
-### Topic Groups를 사용해 최상위 심볼을 정렬하세요.
+### Arrange Top-Level Symbols Using Topic Groups
 
 기본적으로 DocC는 프레임워크의 심볼을 종류별로 정렬합니다. 예를 들어, 컴파일러는 클래스, 구조체, 프로토콜 등에 대한 topic groups를 생성합니다. 그런 다음 해당 심볼 간의 관계를 설명하는 정보를 추가합니다.
 
@@ -91,7 +91,7 @@ DocC는 두 개의 백틱 형식을 사용해 심볼 링크를 생성하고, 심
 
 문서를 재빌드할 때, 문서뷰어는 위의 이미지와 같이 탐색 창과 프레임워크의 랜딩 페이지에 이런 조직 상의 변경 사항을 반영합니다.
 
-### 확장 파일에 중첩 심볼을 정렬하세요.
+### Arrange Nested Symbols in Extension Files
 
 모든 공개 심볼이 프레임워크의 최상위 수준에 나타나야하는 것은 아닙니다. 예를 들어, 클래스와 구조체는 메서드와 프로퍼티를 정의하고, 어떤 경우에는 중첩된 클래스 또는 구조체가 추가적인 계층의 수준을 시작합니다.
 
@@ -143,7 +143,7 @@ DocC는 두 개의 백틱 형식을 사용해 심볼 링크를 생성하고, 심
 
 확장 파일에서 중첩된 심볼을 정렬한 후, Product > Build Documentation 를 선택해 변경 사항을 컴파일하고 Xcode의 문서 뷰어에서 검토하세요.
 
-### 탐색에서 계층을 통합하세요.
+### Incorporate Hierarchy in Your Navigation
 
 랜딩 페이지나 확장 파일에서 심볼을 조직하는 것과 마찬가지로, 심볼 컬렉션을 만들어 문서에 계층을 추가하거나 프레임워크의 타입 계층에서 정의한 것과 다른 관계가 있는 심볼을 그룹화할 수 있습니다. 더 자세한 내용은 <doc:Adding-Supplemental-Content-to-a-Documentation-Catalog>에서 확인하세요. 
 

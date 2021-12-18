@@ -6,7 +6,7 @@
 
 대부분의 iOS 및 tvOS 용 미디어 재생 앱은 원하는 재생 동작을 활성화하기 위해 추가 구성이 필요합니다. 이 구성을 수행하면 앱의 오디오가 예상대로 동작하고, Airplay 스트리밍 및 백그라운드 오디오 재생과 같은 고급 기능을 활성화됩니다.
 
-### 오디오 세션 구성
+### Configure the Audio Session
 
 오디오 세션은 앱과 운영체제(오디오 하드웨어까지) 간의 중개자 역할을 합니다. 오디오 세션을 사용해 특정 동작이나 오디오 하드웨어와의 필수 상호작용을 자세히 설명하지 않고 앱 오디오의 특성을 운영체제에 전달하세요. 대신, 이러한 세부정보의 관리를 오디오 세션에 위임해 운영체제가 사용자의 오디오 경험을 최적으로 관리할 수 있게합니다.
 
@@ -44,7 +44,7 @@ func application(_ application: UIApplication,
 
 카테고리 설정은 오디오 세션과의 가장 작은 상호작용이지만 다른 구성 옵션 및 기능을 사용할 수 있습니다. 자세한 내용은 [AVAudioSession](https://developer.apple.com/documentation/avfaudio/avaudiosession) 을 참조하세요.
 
-### 백그라운드 오디오 활성화
+### Enable Background Audio
 
 iOS 및 tvOS 앱에서는 일부 백그라운드 작업을 위해 특정 capabilties를 활성화해야 합니다. 재생 앱에 필요한 일반적인 기능은 백그라운드 오디오를 재생하는 것 입니다. 이 capability를 활성화하면, 사용자가 다른 앱으로 전환하거나 iOS 기기를 잠글 때도 앱의 오디오가 계속됩니다. 이 capability는 iOS에서 AirPlay 스트리밍 및 PIP(Picture in Picture) 재생과 같은 고급 재생 기능을 활성화하는데도 필요합니다.
 

@@ -14,7 +14,7 @@ Xcode에서 Swift 프레임워크 또는 패키지를 생성하는 즉시 DocC�
 1. Xcode의 문서 뷰어에서, 또는 `xcodebuild` 커맨드라인 도구를 사용해 문서를 내보냅니다.
 2. Xcode 사용자에게 직접 문서뷰어에서 문서를 열도록 하거나 웹 사이트에서 호스팅하여 문서를 공유하십시오.
 
-### 문서의 게시 가능한 아카이브 생성
+### Generate a Publishable Archive of Your Documentation
 
 문서 아카이브를 생성하려면, 문서 뷰어에서 내보내거나 또는 `xcodebuild docbuild` 커맨드라인 도구를 사용하세요. `xcodebuild`를 사용하면 CI(Continuous Intergration) 워크플로우와 통합할 수 있습니다.
 
@@ -43,7 +43,7 @@ xcodebuild docbuild -scheme SlothCreator -derivedDataPath ~/Desktop/SlothCreator
 find ~/Desktop/SlothCreatorBuild -type d -name '*.doccarchive`
 ```
 
-### 개발자에게 직접 문서 아카이브 보내기
+### Send a Documentation Archive Directly to Developers
 
 문서 아카이브는 self-contained 번들이기 때문에, 쉽게 다른 개발자와 공유할 수 있습니다. 예를 들어, 일반 문서처럼 이메일로 보내거나, 프레임워크 또는 패키지의 바이너리 배포에 포함하거나, 웹사이트에서 다운로드할 수 있도록 만들 수 있습니다. 수신자가 문서 아카이브를 열면 Xcode는 문서 뷰어의 Imported Documentation 섹션에 문서 아카이브를 추가합니다.
 
@@ -51,7 +51,7 @@ find ~/Desktop/SlothCreatorBuild -type d -name '*.doccarchive`
 
 가져온 문서 아카이브를 제거하려면, 항목 위에 포인터를 놓아 More 버튼을 표시한 다음 Remove를 선택합니다.
 
-### 웹사이트에 문서 아카이브 호스팅
+### Host a Documentation Archive on Your Website
 
 Xcode가 문서 아카이브를 내보낼 때 번들에 single-page 웹 앱에 포함됩니다. 이 웹 앱은 문서 콘텐츠를 HTML로 렌더링하므로 웹 서버에서 문서 아카이브를 호스팅할 수 있습니다.
 

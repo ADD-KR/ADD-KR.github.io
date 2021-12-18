@@ -25,7 +25,7 @@ UIViewPropertyAnimator 객체를 사용하면 뷰 변경 사항을 애니메이�
 
 이 클래스는 애니메이션 시작, 중지 및 수정을 위한 메서드를 정의하는 [UIViewanimating](https://developer.apple.com/documentation/uikit/uiviewanimating)과 ``UIViewImplicitlyAnimating`` 프로토콜을 채택합니다. 이 프로토콜들의 메서드에 대한 더 자세한 내용은 [UIViewanimating](https://developer.apple.com/documentation/uikit/uiviewanimating)과 ``UIViewImplicitlyAnimating``에서 확인하세요.
 
-### 동적 애니메이션 수정
+### Modifying Animations Dynamically
 
 프로퍼티 애니메이터를 사용하면 애니메이션의 타이밍과 실행을 프로그래밍적으로 제어할 수 있습니다. 특히, 다음 작업을 할 수 있습니다:
 

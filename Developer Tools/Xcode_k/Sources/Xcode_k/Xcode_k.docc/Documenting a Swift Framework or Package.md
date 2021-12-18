@@ -8,7 +8,7 @@ in-source 주석으로부터 풍부하고 매력적인 문서를 만들고, 프�
 
 DocC를 사용하면 레퍼런스 및 개념적인 콘텐츠의 조합을 제공하고 강력한 구성 및 링킹 기능을 사용하여 이를 연결할 수 있습니다. 컴파일러는 Xcode와 직접 통합되어 코드 완성, 빠른 도움말 등을 포함한 기존 워크플로우를 향상시킵니다. 또한 소스에서 직접 문서를 작성하기 때문에 Git과 같이 이미 익숙한 도구를 사용하여 변경 사항을 추적할 수 있습니다.
 
-### 소스 주석에서 간단한 문서 빌드
+### Build Simple Documentation from Your Source Comments
 
 Xcode는 DocC는 문서를 컴파일하기 위해, 먼저 Swift 프레임워크 또는 패키지를 빌드하고 컴파일된 artifact와 함께 공개(public) API에 대한 추가 정보를 저장합니다. DocC는 해당 정보를 사용하여 문서를 DocC 아카이브로 컴파일합니다. 이 프로세스는 타겟이 의존성을 가지는 모든 Swift 프레임워크 또는 패키지에 대해 반복됩니다.
 
@@ -18,9 +18,9 @@ Swift 프레임워크 또는 패키지에 대한 문서를 빌드하려면, Prod
 
 ![figure2](Documenting-a-Swift-Framework-or-Package-figure2)
 
-DocC는 소스 코드에 작성한 주석을 생성하는 문서 페이지의 내용으로 사용합니다. 최소한 DocC가 한줄 개요 또는 요약으로 사용할 기본 *문서 주석*을 프레임워크의 공개 심볼에 추가하세요. 또는 매개변수, 더 자세한 내용을 제공하기 위해 반환 값 및 에러에 대한 정보를 포함한 철저한 문서 주석을 추가합니다. 더 자세한 내용은 [Writing Symbol Documentation in Your Source Files](https://developer.apple.com/documentation/xcode/writing-symbol-documentation-in-your-source-files)을 확인하세요.
+DocC는 소스 코드에 작성한 주석을 생성하는 문서 페이지의 내용으로 사용합니다. 최소한 DocC가 한줄 개요 또는 요약으로 사용할 기본 *문서 주석*을 프레임워크의 공개 심볼에 추가하세요. 또는 매개변수, 더 자세한 내용을 제공하기 위해 반환 값 및 에러에 대한 정보를 포함한 철저한 문서 주석을 추가합니다. 더 자세한 내용은 <doc:Writing-Symbol-Documentation-in-Your-Source-Files>을 확인하세요.
 
-### 더 풍부한 문서 경험 구성
+### Configure a Richer Documentation Experience
 
 기본적으로 DocC는 in-source 심볼 문서만 컴파일한 다음 프로토콜, 클래스, 열거형 등과 같은 종류별로 해당 심볼을 그룹화합니다. 추가 콘텐츠를 제공하거나 프레임워크 심볼의 구성을 커스텀하려면 *문서 카탈로그*를 사용하세요. 
 
@@ -45,7 +45,7 @@ DocC는 Swift 컴파일러의 공개 API 정보를 문서 카탈로그의 내용
 
 ![figure5](Documenting-a-Swift-Framework-or-Package-figure5)
 
-### 빌드 프로세스에 문서 통합
+### Incorporate Documentation into Your Build Process
 
 Product > Build Documentation을 선택하여 온디맨드 문서를 빌드하는 것 외에도, DocC에서 제공하는 빌드 설정을 활성화하여 프레임워크를 빌드할 때마다 자동으로 컴파일할 수 있습니다.
 

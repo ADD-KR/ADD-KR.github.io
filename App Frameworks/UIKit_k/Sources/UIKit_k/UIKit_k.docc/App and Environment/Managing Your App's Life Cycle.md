@@ -13,7 +13,7 @@ foreground이나 background에 있을 때 시스템 notification에 응답하고
 
 > Note: 앱이 scene 지원을 활성화하면, iOS는 iOS 13 이상 버전에서 항상 scene 델리게이트를 사용합니다. iOS 12 이하 버전에서는, 시스템이 앱 델리게이트를 사용합니다.
 
-### Scene 기반 생명주기 이벤트에 응답하세요
+### Respond to Scene-Based Life-Cycle Events
 
 앱이 scenes을 지원하는 경우, UIKit은 각 scene에 대해 별도의 생명주기 이벤트를 전달합니다. scene은 기기에서 실행되는 앱 UI의 한 인스턴스를 나타냅니다. 사용자는 각 앱에 대해 여러 scenes을 생성할 수 있고, 별도로 표시하거나 숨길 수 있습니다. 각 scene은 고유한 생명주기를 가지기 때문에, 서로 다른 실행상태에 있을 수 있습니다. 예를 들어, 한 scene이 background 또는 suspended 상태에 있을 때 다른 scene은 foreground 상태에 있을 수 있습니다.
 
@@ -32,7 +32,7 @@ scene 전환을 사용해 다음 작업을 수행하세요:
 - scene 연결이 해제되면, scene과 관련된 모든 공유 리소스를 정리하세요.
 - Scene 관련 이벤트 외에도, [UIApplicationDelegate](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) 객체를 사용해 앱 시작에 응답해야합니다. 앱 시작 시 수행할 작업에 대한 정보는 [Responding to the Launch of Your App](https://developer.apple.com/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app) 를 참조하세요.
 
-### 앱 기반 생명주기 이벤트에 응답하세요
+### Respond to App-Based Life-Cycle Events
 
 iOS 12 이하 버전, 그리고 scenes을 지원하지 않는 앱의 경우 UIKit은 모든 생명주기 이벤트를  [UIApplicationDelegate](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) 객체에 전달합니다. 앱델리게이트는 별도로 화면에 표시되는 것을 포함한 앱의 모든 윈도우를 관리합니다. 따라서, 앱 상태 전환은 외부 디스플레이의 컨텐츠를 포함하여 앱의 전체 UI에 영향을 줍니다.
 
@@ -48,7 +48,7 @@ iOS 12 이하 버전, 그리고 scenes을 지원하지 않는 앱의 경우 UIKi
 - background 상태에 진입하면, 중요한 작업을 완료하고, 가능한 많은 메모리를 해제하고, 앱 스냅샷을 준비하세요. [Preparing Your UI to Run in the Background](https://developer.apple.com/documentation/uikit/app_and_environment/scenes/preparing_your_ui_to_run_in_the_background) 를 참조하세요.
 - 종료되면, 모든 작업을 즉시 중단하고 모든 공유 리소스를 해제하세요. [`applicationWillTerminate(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623111-applicationwillterminate) 를 참조하세요.
 
-### 다른 중요 이벤트에 응답하세요
+### Respond to Other Significant Events
 
 생명주기 이벤트를 처리하는 것 뿐 아니라, 앱은 다음 표에 나열된 이벤트를 처리할 준비가 되어있어야 합니다. [UIApplicationDelegate](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) 객체를 사용해 이러한 이벤트의 대부분을 처리하세요. 경우에 따라 알림을 사용해 이벤트를 처리할 수도 있으므로 앱의 다른 부분에서 응답할 수 있습니다.
 

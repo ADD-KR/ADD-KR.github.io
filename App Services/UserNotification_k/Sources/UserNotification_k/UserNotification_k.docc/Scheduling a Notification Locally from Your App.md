@@ -8,7 +8,7 @@
 
 알림 전달은 지정한 시간이나 위치에 따라 시스템에서 처리됩니다. 앱이 실행되고 있지 않거나 백그라운드 상태일 때 알림이 전달되면, 시스템은 사용자와 상호작용합니다. 만약 앱이 포어그라운드 상태라면 시스템은 앱에게 알림을 전달해 처리할 수 있도록 합니다.
 
-### 알림 컨텐츠 생성
+### Create the Notification's Content
 
 [UNMutableNotificationContent](https://developer.apple.com/documentation/usernotifications/unmutablenotificationcontent) 객체의 프로퍼티를 알림의 세부 정보로 채우세요. 입력한 필드는 알림 전달 방법을 정의합니다. 예를 들어, 소리를 재생하기 위해, 객체의 [sound](https://developer.apple.com/documentation/usernotifications/unnotificationcontent/1649871-sound) 프로퍼티에 값을 할당합니다. Listing 1은 띄워질 얼럿의 제목과 본문을 담은 컨텐츠 객체를 보여줍니다. 같은 요청에 여러 인터랙션 타입을 지정할 수 있습니다.
 
@@ -19,7 +19,7 @@ let content = UNMutableNotificationContent()content.title = "Weekly Staff Meetin
 content.body = "Every Tuesday at 2pm"
 ```
 
-### 전달을 위한 조건 지정
+### Specify the Conditions for Delivery
 
 [`UNCalendarNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/uncalendarnotificationtrigger), [`UNTimeIntervalNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/untimeintervalnotificationtrigger), 또는 [`UNLocationNotificationTrigger`](https://developer.apple.com/documentation/usernotifications/unlocationnotificationtrigger) 객체를 사용해 알림 전달의 조건을 지정하세요. 각 트리거 객체는 다른 파라미터를 요구합니다. 예를 들어 캘린더 기반 트리거는 알림이 전달될 날짜와 시간을 지정하도록 요구합니다.
 
@@ -40,7 +40,7 @@ let trigger = UNCalendarNotificationTrigger(
          dateMatching: dateComponents, repeats: true)
 ```
 
-### 알림 요청 생성 및 등록
+### Create and Register a Notification Request
 
 컨텐츠와 트리거 조건을 담은 UNNotificationRequest 객체를 생성하고 시스템이 요청을 예약할 수 있도록 [add(_:withCompletionHandler:)](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/1649508-add) 메서드를 호출하세요. Listing 3은 Listing 1과 Listing 2의 컨텐츠를 사용해 request 객체를 생성한 예제입니다.
 
@@ -61,6 +61,6 @@ notificationCenter.add(request) { (error) in
 }
 ```
 
-### 예약된 알림 요청 취소
+### Cancel a Scheduled Notification Request
 
 한번 예약된 알림 요청은 트리거 조건에 부합하거나, 명시적으로 취소하기 전까지 활성화되어 남아있게 됩니다. 일반적으로, 상태가 바뀌었거나 더이상 사용자에게 알림을 전달할 필요가 없을 때 요청을 취소합니다. 예를 들어, 사용자가 리마인더를 완료하면, 리마인더와 관련된 모든 활성화 상태의 요청을 취소합니다. 활성화 상태의 알림 요청을 취소하기 위해 UNUserNotificationCenter의 [removePendingNotificationRequests(withIdentifiers:)](https://developer.apple.com/documentation/usernotifications/unusernotificationcenter/1649517-removependingnotificationrequest) 메서드를 호출하세요.
