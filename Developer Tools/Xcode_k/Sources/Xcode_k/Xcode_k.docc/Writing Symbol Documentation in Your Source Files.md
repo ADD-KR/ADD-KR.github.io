@@ -37,7 +37,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 그렇지 않으면, Xcode의 Code Actions 메뉴를 사용해 작성할 템플릿을 생성합니다. 소스 에디터의 심볼을 Command-click하고 Code Actions 메뉴의 Add Documentation을 선택하세요.
 
-![figure1](Writing-Symbol-Documentation-in-Your-Source-Files-figure1.png)
+![figure1](Writing-Symbol-Documentation-in-Your-Source-Files-figure1)
 
 Description 플레이스홀더를 심볼의 요약으로 대치하세요.
 
@@ -45,7 +45,7 @@ Description 플레이스홀더를 심볼의 요약으로 대치하세요.
 
 요약을 추가한 후, 심볼을 Option-click하여 Xcode의 Quick Help에서 변경사항을 리뷰하세요. Summary 헤더의 마로 아래에 추가한 텍스트가 표시됩니다.
 
-![figure2](Writing-Symbol-Documentation-in-Your-Source-Files-figure2.png)
+![figure2](Writing-Symbol-Documentation-in-Your-Source-Files-figure2)
 
 예를 들어 심볼에 대한 추가 콘텐츠를 제공해야하는 경우, Discussion 섹션을 생성하기 위해 심볼의 요약 바로 아래에 하나 이상의 단락을 추가하세요. 포함하는 내용은 문서화하는 심볼의 타입에 따라 다릅니다:
 - 프로퍼티의 경우, 해당 속성이 부모에 어떤 영향을 미치는지 설명하세요. 일반적인 사용법과 허용되는 것 또는 기본 값을 설명하세요.
@@ -69,9 +69,9 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 Discussion 섹션을 추가한 후, Quick Help를 호출하여 업데이트된 문서 주석을 보세요. 또는 Product > Build Documentation을 선택하여 프레임워크의 문서를 컴파일하고 문서 뷰어에서 이를 여세요.
 
-![figure3](Writing-Symbol-Documentation-in-Your-Source-Files-figure3.png)
+![figure3](Writing-Symbol-Documentation-in-Your-Source-Files-figure3)
 
-Discussion 섹션에 대한 콘텐츠를 작성할 때, *documentation markup*을 사용하세요. 자세한 정보는 [Formatting Your Documentation Content](https://developer.apple.com/documentation/xcode/formatting-your-documentation-content)를 확인하세요.
+Discussion 섹션에 대한 콘텐츠를 작성할 때, *documentation markup*을 사용하세요. 자세한 정보는 <doc:Formatting-Your-Documentation-Content>를 확인하세요.
 
 ### 메서드의 매개변수 설명
 
@@ -98,7 +98,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 메서드 매개변수에 대한 문서를 추가하면 Xcode의 Quick Help과 Product > Build Documentation 을 선택할 때 DocC가 생성하는 심볼 레퍼런스 페이지에 나타납니다.
 
-![figure4](Writing-Symbol-Documentation-in-Your-Source-Files-figure4.png)
+![figure4](Writing-Symbol-Documentation-in-Your-Source-Files-figure4)
 
 ### 매서드의 반환 값 설명
 
@@ -118,7 +118,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 DocC가 생성한 심볼 레퍼런스 페이지와 Xcode의 Quick Help에서 Returns 섹션을 확인할 수 있습니다.
 
-![figure5](Writing-Symbol-Documentation-in-Your-Source-Files-figure5.png)
+![figure5](Writing-Symbol-Documentation-in-Your-Source-Files-figure5)
 
 ### 메서드의 Thrown 에러 설명
 
@@ -137,7 +137,7 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 Throws 섹션은 심볼의 레퍼런스 페이지, Quick Help 팝업 및 Command-Option-3을 사용하여 볼 수 있는 Quick Help 인스펙터에 나타납니다.
 
-![figure6](Writing-Symbol-Documentation-in-Your-Source-Files-figure6.png)
+![figure6](Writing-Symbol-Documentation-in-Your-Source-Files-figure6)
 
 ### 심볼 문서를 위한 풍부한 경험 생성
 
@@ -163,5 +163,5 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 ```
 
 또한, DocC에는 심볼에 대해 더욱 풍부한 문서를 만들 수 있는 기능이 포함되어 있습니다.
-- 프레임워크에서 다른 심볼을 참조할 때 *code voice* 대신 *심볼 링크(symbol links)*를 사용합니다. 심볼 링크를 사용하면 문서 뷰어에서 프레임워크의 문서를 빠르게 탐색할 수 있으며, Quick Help를 사용하면 팝오버와 인스펙터에서 프레임워크 문서를 표시할 수 있습니다. 더 자세한 정보는 [Formatting Your Documentation Content](https://developer.apple.com/documentation/xcode/formatting-your-documentation-content)를 확인하세요.
+- 프레임워크에서 다른 심볼을 참조할 때 *code voice* 대신 *심볼 링크(symbol links)*를 사용합니다. 심볼 링크를 사용하면 문서 뷰어에서 프레임워크의 문서를 빠르게 탐색할 수 있으며, Quick Help를 사용하면 팝오버와 인스펙터에서 프레임워크 문서를 표시할 수 있습니다. 더 자세한 정보는 <doc:Formatting-Your-Documentation-Content>를 확인하세요.
 - *확장 파일(extension files)*을 사용해 코드 예제 및 이미지와 같은 심볼에 대한 추가 콘텐츠를 제공하고, in-source 주석의 크기를 관리가능한 수준으로 유지하세요. 더 자세한 정보는 <doc:Adding-Supplemental-Content-to-a-Documentation-Catalog>를 확인하세요.

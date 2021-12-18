@@ -27,7 +27,7 @@
 
 예를 들어, 문서 카탈로그에 `GettingStarted.md`라는 이름의 아티클 파일이 있는 경우, XCode는 문서 뷰어에서 문서 아이콘과 함께 이 아티클을 표시합니다.
 
-![figure1](Adding-Supplemental-Content-to-a-Documentation-Catalog-figure1.png)
+![figure1](Adding-Supplemental-Content-to-a-Documentation-Catalog-figure1)
 
 아티클의 구조는 첫 번째 H1이 심볼 참조가 아닌 일반 콘텐츠라는 점을 제외하고는 심볼 파일이나 최상위 랜딩 페이지와 비슷합니다. 예를 들어, Getting Started with Sloths 아티클에는 제목, 단일 문장 초록 또는 요약, Overview 섹션이 포함되어 있습니다:
 
@@ -51,13 +51,13 @@ habitat.
 4. 파일의 첫 번째 줄을 문서의 제목으로 수정하세요.
 5. 파일의 요약 및 플레이스홀더를 적절한 콘텐츠로 대체하세요.
 
-![figure2](Adding-Supplemental-Content-to-a-Documentation-Catalog-figure2.png)
+![figure2](Adding-Supplemental-Content-to-a-Documentation-Catalog-figure2)
 
 Overview 섹션 다음에 추가 섹션 및 하위 섹션은 H2에 대해 이중 해시(##)를 사용하고 H3에 대해 삼중 해시(###)를 사용합니다. 해쉬 뒤에는 공백과 함께 다음 해당 섹션 또는 하위 섹션의 제목을 적습니다.
 
 > Tip: 독자가 특정 작업을 수행하는 데 도움이 되도록 섹션을 사용하여 작업을 완료하는 데 필요한 단계를 안내합니다. 더 큰 개념의 경우 서로를 기반으로 하는 아티클 시리즈를 추가하는 것이 좋습니다.
 
-문서 카탈로그에 아티클을 추가하면, DocC는 프로젝트의 최상위 페이지에 아티클에 대한 링크를 포함합니다. 아티클의 다른 위치를 선택하려면, 그룹 또는 컬렉션에서 아티클에 대한 링크를 추가하세요. DocC가 아티클에 대한 링크를 렌더링할 때 링크 텍스트를 아티클의 제목으로 사용합니다. 프로젝트 문서 구성에 대한 자세한 내용은 <doc:Adding-Structure-to-Your-Documentation-Pages>를 참고하세요.
+문서 카탈로그에 아티클을 추가하면, DocC는 프로젝트의 최상위 페이지에 아티클에 대한 링크를 포함합니다. 아티클의 다른 위치를 선택하려면, 그룹 또는 컬렉션에서 아티클에 대한 링크를 추가하세요. DocC가 아티클에 대한 링크를 렌더링할 때 아티클의 제목을 링크의 텍스트로 사용합니다. 프로젝트 문서 구성에 대한 자세한 내용은 <doc:Adding-Structure-to-Your-Documentation-Pages>를 참고하세요.
 
 ### 소스 문서 주석에 추가하거나 재정의할 확장 파일 추가
 
@@ -75,7 +75,7 @@ Overview 섹션 다음에 추가 섹션 및 하위 섹션은 H2에 대해 이중
 
 > Important: 확장 파일의 제목은 반드시 심볼의 절대경로를 사용해야하고, 프레임워크 또는 패키지의 이름을 포함해야 합니다. DocC는 이 컨텍스트에서 심볼의 상대경로를 지원하지 않습니다.
 
-![figure3](Adding-Supplemental-Content-to-a-Documentation-Catalog-figure3.png)
+![figure3](Adding-Supplemental-Content-to-a-Documentation-Catalog-figure3)
 
 심볼에 이미 소스 문서 주석이 있는 경우 `DocumentationExtension` 지시문을 추가하여 확장 파일의 내용이 소스 문서 주석에 추가되거나 재정의되는지 여부를 지정합니다. 다음 형식을 사용하여 심볼을 지정하는 파일의 첫 번째 줄 뒤에 `DocumentationExtension`을 추가합니다:
 

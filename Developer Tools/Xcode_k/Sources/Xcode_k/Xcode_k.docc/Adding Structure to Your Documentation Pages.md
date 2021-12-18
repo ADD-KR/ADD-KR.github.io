@@ -18,7 +18,7 @@
 
 문서 카탈로그가 포함되지 않은 프로젝트의 경우, DocC는 프레임워크의 심볼 문서에 대한 진입점을 제공하는 기본 랜딩 페이지를 생성합니다. 그러나 문서 카탈로그를 추가하면, 프레임워크 사용자에게 풍부하고 매력적인 경험을 재공하는 커스텀 랜딩 페이지를 포함할 수 있습니다.
 
-![figure1](Adding-Structure-to-Your-Documentation-Pages-figure1.png)
+![figure1](Adding-Structure-to-Your-Documentation-Pages-figure1)
 
 프레임워크에 문서 카탈로그를 추가하면, Xcode는 자동으로 빈 랜딩 페이지를 포함합니다. 더 자세한 정보는 <doc:Documenting-a-Swift-Framework-or-Package>를 참고하세요.
 
@@ -28,7 +28,7 @@
 2. File > New > File 을 선택해 file template chooser를 엽니다.
 3. Documentation 섹션에서 Empty 템플릿을 선택하고, Next를 클릭합니다. Xcode는 페이지 제목에 대한 플레이스홀더만 포함하는 마크다운 템플릿을 생성합니다.
 
-![figure2](Adding-Structure-to-Your-Documentation-Pages-figure2.png)
+![figure2](Adding-Structure-to-Your-Documentation-Pages-figure2)
 
 프레임워크의 이름을 파일에 맞게 수정하세요. 예를 들어 `SlothCreator` 프레임워크의 경우, 파일 이름은 `filename은 SlothCreator.md`입니다.
 
@@ -50,7 +50,7 @@ Catalog sloths you find in nature and create new adorable virtual sloths.
 
 요약 다음에 다른 빈 줄을 추가한 다음 프레임워크를 소개하는 하나 이상의 단락을 추가하여 랜딩 페이지의 Overview 섹션을 구성합니다. 개요를 간략하게 유지하세요. 일반적으로 화면의 콘텐츠 분량보다 적습니다. 프레임워크의 모든 기능을 자세히 설명하지 마세요. 대신, 사용자가 프레임워크가 해결하는 문제를 이해하는 데 도움이 되는 콘텐츠를 제공하세요.
 
-*문서 마크업*을 사용해 Overview를 작성하세요; 이미지, 목록, 다른 콘텐츠 및 심볼에 대한 링크를 포함할 수 있는 가벼운 마크업 언어입니다. 더 자세한 내용은 [Formatting Your Documentation Content](https://developer.apple.com/documentation/xcode/formatting-your-documentation-content)을 참고하세요.
+*문서 마크업*을 사용해 Overview를 작성하세요; 이미지, 목록, 다른 콘텐츠 및 심볼에 대한 링크를 포함할 수 있는 가벼운 마크업 언어입니다. 더 자세한 내용은 <doc:Formatting-Your-Documentation-Content>을 참고하세요.
 
 커스텀 랜딩 페이지는 풍부한 콘텐츠를 제공하는 것 외에도 문서 계층 구조의 최상위 기호 및 기타 콘텐츠 구성을 제공합니다.
 
@@ -60,7 +60,7 @@ Catalog sloths you find in nature and create new adorable virtual sloths.
 
 사용자의 보다 쉬운 프레임워크 탐색을 위해, 심볼을 의미있는 이름을 가진 그룹으로 정렬하세요. 중요한 심볼은 페이지의 위쪽에 배치하고, supporting symbol은 다른 기호 안에 중첩하세요. 고유하고, 상호 배타적이며 명확한 의미를 지닌 그룹 이름을 사용하세요. 가장 잘 맞는 것을 찾기 위해 다양한 배열을 시도하세요.
 
-![figure3](Adding-Structure-to-Your-Documentation-Pages-figure3.png)
+![figure3](Adding-Structure-to-Your-Documentation-Pages-figure3)
 
 기본 구성을 재정의하고 프레임워크의 최상위 심볼을 수동으로 정렬하려면, 프레임워크의 랜딩 페이지에 *Topics* 섹션을 추가하세요. 마크다운 파일의 이미 있는 콘텐츠 아래에 두 개의 해시(##)와 공백 그리고 `Topics` 키워드를 추가하세요.
 
@@ -87,7 +87,7 @@ Topics 헤더 뒤에 세 개의 해시(###)를 사용해 각 그룹에 대해 �
 - ``Sloth/Food``
 ```
 
-DocC는 두 개의 백틱 형식을 사용해 심볼 링크를 생성하고, 심볼의 타입 정보 및 요약을 추가합니다. 더 자세한 내용은 [Formatting Your Documentation Content](https://developer.apple.com/documentation/xcode/formatting-your-documentation-content)에서 확인하세요.
+DocC는 두 개의 백틱 형식을 사용해 심볼 링크를 생성하고, 심볼의 타입 정보 및 요약을 추가합니다. 더 자세한 내용은 <doc:Formatting-Your-Documentation-Content>에서 확인하세요.
 
 문서를 재빌드할 때, 문서뷰어는 위의 이미지와 같이 탐색 창과 프레임워크의 랜딩 페이지에 이런 조직 상의 변경 사항을 반영합니다.
 
@@ -97,7 +97,7 @@ DocC는 두 개의 백틱 형식을 사용해 심볼 링크를 생성하고, 심
 
 프레임워크의 랜딩 페이지와 마찬가지로, DocC는 타입에 따라 중첩 심볼에 대한 기본 topic groups을 생성합니다. 확장 파일을 사용해 이 기본 구성을 재정의하고 심볼에 보다 적절한 구조를 제공하세요.
 
-![figure4](Adding-Structure-to-Your-Documentation-Pages-figure4.png)
+![figure4](Adding-Structure-to-Your-Documentation-Pages-figure4)
 
 특정 심볼에 대한 문서 카탈로그에 확장 파일을 추가하려면 다음을 수행하세요:
 
@@ -105,7 +105,7 @@ DocC는 두 개의 백틱 형식을 사용해 심볼 링크를 생성하고, 심
 2. File > New > File 을 선택하여 파일 템플릿 선택기를 엽니다.
 3. Documentation 섹션에서 Extension File 템플릿을 선택하고 Next를 클릭합니다. Xcode는 기본 이름이 Extension.md인 새 확장 파일을 생성합니다.
 
-![figure5](Adding-Structure-to-Your-Documentation-Pages-figure5.png)
+![figure5](Adding-Structure-to-Your-Documentation-Pages-figure5)
 
 `Extension.md` 파일에서 `Symbol` 플레이스홀더를 조직화하려는(organizing) 심볼의 이름으로 바꾸고 이에 따라 파일 이름을 바꿉니다.
 

@@ -23,7 +23,7 @@ Xcode의 문서 뷰어에서 문서 아카이브를 내보내려면:
 2. More 버튼을 클릭하고 Export 메뉴 항목을 선택합니다. 또는 문서 카탈로그 항목에서 컨텍스트 메뉴를 호출하여 내보내기 메뉴에 액세스합니다.
 3. 문서 아카이브 저장 위치를 선택하고, Save를 클릭하세요.
 
-![figure1](Distributing-Documentation-to-External-Developers-figure1.png)
+![figure1](Distributing-Documentation-to-External-Developers-figure1)
 
 Xcode가 내보낸 문서 아카이브는 `.doccarchive` 파일 확장자를 사용합니다.
 
@@ -47,7 +47,7 @@ find ~/Desktop/SlothCreatorBuild -type d -name '*.doccarchive`
 
 문서 아카이브는 self-contained 번들이기 때문에, 쉽게 다른 개발자와 공유할 수 있습니다. 예를 들어, 일반 문서처럼 이메일로 보내거나, 프레임워크 또는 패키지의 바이너리 배포에 포함하거나, 웹사이트에서 다운로드할 수 있도록 만들 수 있습니다. 수신자가 문서 아카이브를 열면 Xcode는 문서 뷰어의 Imported Documentation 섹션에 문서 아카이브를 추가합니다.
 
-![figure2](Distributing-Documentation-to-External-Developers-figure2.png)
+![figure2](Distributing-Documentation-to-External-Developers-figure2)
 
 가져온 문서 아카이브를 제거하려면, 항목 위에 포인터를 놓아 More 버튼을 표시한 다음 Remove를 선택합니다.
 

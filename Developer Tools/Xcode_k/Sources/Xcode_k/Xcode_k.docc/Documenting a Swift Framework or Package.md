@@ -12,11 +12,11 @@ DocC를 사용하면 레퍼런스 및 개념적인 콘텐츠의 조합을 제공
 
 Xcode는 DocC는 문서를 컴파일하기 위해, 먼저 Swift 프레임워크 또는 패키지를 빌드하고 컴파일된 artifact와 함께 공개(public) API에 대한 추가 정보를 저장합니다. DocC는 해당 정보를 사용하여 문서를 DocC 아카이브로 컴파일합니다. 이 프로세스는 타겟이 의존성을 가지는 모든 Swift 프레임워크 또는 패키지에 대해 반복됩니다.
 
-![figure1](Documenting-a-Swift-Framework-or-Package-figure1.png)
+![figure1](Documenting-a-Swift-Framework-or-Package-figure1)
 
 Swift 프레임워크 또는 패키지에 대한 문서를 빌드하려면, Product > Build Documentation을 선택하세요. DocC는 문서를 컴파일하고 Xcode의 문서 뷰어에서 엽니다.
 
-![figure2](Documenting-a-Swift-Framework-or-Package-figure2.png)
+![figure2](Documenting-a-Swift-Framework-or-Package-figure2)
 
 DocC는 소스 코드에 작성한 주석을 생성하는 문서 페이지의 내용으로 사용합니다. 최소한 DocC가 한줄 개요 또는 요약으로 사용할 기본 *문서 주석*을 프레임워크의 공개 심볼에 추가하세요. 또는 매개변수, 더 자세한 내용을 제공하기 위해 반환 값 및 에러에 대한 정보를 포함한 철저한 문서 주석을 추가합니다. 더 자세한 내용은 [Writing Symbol Documentation in Your Source Files](https://developer.apple.com/documentation/xcode/writing-symbol-documentation-in-your-source-files)을 확인하세요.
 
@@ -26,7 +26,7 @@ DocC는 소스 코드에 작성한 주석을 생성하는 문서 페이지의 �
 
 DocC는 Swift 컴파일러의 공개 API 정보를 문서 카탈로그의 내용과 결합해 훨씬 더 풍부한 DocC 아카이브를 생성합니다. 
 
-![figure3](Documenting-a-Swift-Framework-or-Package-figure3.png)
+![figure3](Documenting-a-Swift-Framework-or-Package-figure3)
 
 다음을 포함하려면 문서 카탈로그를 사용하세요:
 - 프레임워크를 소개하고 최상위 심볼을 정렬하는 랜딩 페이지와 심볼의 프로퍼티 및 메서드에 대한 커스텀 구성을 제공하는 확장 파일. 더 자세한 정보는 <doc:Adding-Structure-to-Your-Documentation-Pages>에서 확인하세요.
@@ -39,11 +39,11 @@ DocC는 Swift 컴파일러의 공개 API 정보를 문서 카탈로그의 내용
 2. File > New > File을 선택하여 file template chooser를 엽니다.
 3. Documentation 섹션에서 Documentation Cataloag 템플릿을 선택하고, Next를 클릭하세요. Xcode는 이름을 변경할 수 있는 새로운 카탈로그를 기본 이름으로 생성합니다.
 
-![figure4](Documenting-a-Swift-Framework-or-Package-figure4.png)
+![figure4](Documenting-a-Swift-Framework-or-Package-figure4)
 
 새로운 Swift 프레임워크 프로젝트를 생성할 때 Include Documentatioon 옵션을 선택하여 문서 카탈로그를 포함할 수 있습니다.
 
-![figure5](Documenting-a-Swift-Framework-or-Package-figure5.png)
+![figure5](Documenting-a-Swift-Framework-or-Package-figure5)
 
 ### 빌드 프로세스에 문서 통합
 
@@ -56,7 +56,7 @@ Product > Build Documentation을 선택하여 온디맨드 문서를 빌드하�
 4. Build Documentation during ‘Build’ setting을 찾기 위해 검색창에 “build documentation”을 입력합니다.
 5. 설정의 팝업 버튼에서 Yes를 선택하여 빌드 설정을 활성화합니다.
 
-![figure6](Documenting-a-Swift-Framework-or-Package-figure6.png)
+![figure6](Documenting-a-Swift-Framework-or-Package-figure6)
 
 > Note: 기존 프레임워크 프로젝트의 경우, 문서 카탈로그를 추가한 후에만 빌드 설정이 나타납니다. Swift 패키지에는 빌드 설정을 사용할 수 없습니다.
 

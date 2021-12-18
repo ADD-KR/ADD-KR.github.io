@@ -21,7 +21,7 @@ foreground이나 background에 있을 때 시스템 notification에 응답하고
 
 다음 figure는 scene의 상태 전환을 보여줍니다. 사용자 또는 시스템이 앱에 대한 새로운 scene을 요청하면, UIKit이 scene을 생성하고 unattached 상태에 둡니다. 사용자가 요청한 scenes는 화면에 나타나는 foreground로 빠르게 이동합니다. 시스템이 요청한 scene은 일반적으로 이벤트를 처리할 수 있도록 backgronud로 이동합니다. 예를 들어, 시스템은 위치 이벤트를 처리하기 위해 background에서 장면을 시작할 수 있습니다. 사용자가 앱의 UI를 닫으면, UIKit은 연결된 scene을 background 상태로 이동하고, 결국에는 suspended 상태로 이동합니다. UIKit은 리소스를 회수하기 위해 언제든지 background 또는 suspended scene의 연결을 해제하고, unattached 상태로 되돌릴 수 있습니다.
 
-![Figure1](Managing-Your-Apps-Life-Cycle-figure1.png)
+![Figure1](Managing-Your-Apps-Life-Cycle-figure1)
 
 scene 전환을 사용해 다음 작업을 수행하세요:
 
@@ -38,7 +38,7 @@ iOS 12 이하 버전, 그리고 scenes을 지원하지 않는 앱의 경우 UIKi
 
 다음 figure는 앱델리게이트 객체와 관련된 상태 전환을 보여줍니다. 앱 시작 후, 시스템은 UI가 화면에 표시될 것인지 여부에 따라 앱을 inactive 또는 background 상태로 전환합니다. foreground로 시작하면, 시스템은 자동으로 앱을 active 상태로 전환합니다. 이 후, 상태는 앱이 종료될 때까지 active와 background 사이에서 변동합니다.
 
-![Figure2](Managing-Your-Apps-Life-Cycle-figure2.png)
+![Figure2](Managing-Your-Apps-Life-Cycle-figure2)
 
 앱 전환을 사용해 다음 작업을 수행하세요:
 

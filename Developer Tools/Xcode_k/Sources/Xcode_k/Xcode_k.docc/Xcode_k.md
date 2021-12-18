@@ -6,7 +6,7 @@ Apple의 IDE(Intergrated Development Environment, 통합 개발 환경)으로 �
 
 Xcode는 개발자가 Apple 플랫폼용 앱을 빌드하는 데 사용하는 도구 모음으로 구성됩니다. Xcode를 사용하여 앱 생성부터 테스트, 최적화 및 App Store 제출까지의 전체 개발 워크플로우를 관리하세요.
 
-![figure1](Xcode_k-figure1.png)
+![figure1](Xcode_k-figure1)
 
 Xcode는 개발 도구를 실행하거나 Xcode > Open Developer Tool 메뉴에서 개별적으로 실행할 수 있습니다:
 
@@ -25,4 +25,5 @@ Xcode 사용을 시작하려면, [Creating an Xcode Project for an App](https://
 - <doc:Writing-Symbol-Documentation-in-Your-Source-Files>
 - <doc:Adding-Structure-to-Your-Documentation-Pages>
 - <doc:Adding-Supplemental-Content-to-a-Documentation-Catalog>
+- <doc:Formatting-Your-Documentation-Content>
 - <doc:Distributing-Documentation-to-External-Developers>
