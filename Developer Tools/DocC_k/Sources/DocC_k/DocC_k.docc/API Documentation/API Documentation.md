@@ -1,6 +1,6 @@
 # API Documentation
 
-소스코드 및 문서 extension 파일에서 생성한 레퍼런스 문서를 통해 개발자들에게 Swift APIs를 가르칩니다.
+소스코드 및 문서 확장 파일에서 생성한 레퍼런스 문서를 통해 개발자들에게 Swift APIs를 가르칩니다.
 
 ## Overview
 

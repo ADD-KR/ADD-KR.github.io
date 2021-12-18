@@ -4,7 +4,7 @@ in-source 주석으로부터 풍부하고 매력적인 문서를 만들고, 프�
 
 ## Overview
 
-*DocC* 또는 *문서 컴파일러*를 사용하면 Swift 프레임워크 및 패키지에 대한 문서를 쉽게 생성할 수 있습니다. 컴파일러는 in-source 주석과 함께 Xcode의 프로젝트의 extension 파일, articles 및 기타 리소스를 결합하여 문서를 작성하므로 개발자를 위한 풍부하고 매력적인 문서를 만들 수 있습니다.
+*DocC* 또는 *문서 컴파일러*를 사용하면 Swift 프레임워크 및 패키지에 대한 문서를 쉽게 생성할 수 있습니다. 컴파일러는 in-source 주석과 함께 Xcode의 프로젝트의 확장 파일, articles 및 기타 리소스를 결합하여 문서를 작성하므로 개발자를 위한 풍부하고 매력적인 문서를 만들 수 있습니다.
 
 DocC를 사용하면 레퍼런스 및 개념적인 콘텐츠의 조합을 제공하고 강력한 구성 및 링킹 기능을 사용하여 이를 연결할 수 있습니다. 컴파일러는 Xcode와 직접 통합되어 코드 완성, 빠른 도움말 등을 포함한 기존 워크플로우를 향상시킵니다. 또한 소스에서 직접 문서를 작성하기 때문에 Git과 같이 이미 익숙한 도구를 사용하여 변경 사항을 추적할 수 있습니다.
 
@@ -29,8 +29,8 @@ DocC는 Swift 컴파일러의 공개 API 정보를 문서 카탈로그의 내용
 ![figure3](Documenting-a-Swift-Framework-or-Package-figure3.png)
 
 다음을 포함하려면 문서 카탈로그를 사용하세요:
-- 프레임워크를 소개하고 최상위 심볼을 정렬하는 랜딩 페이지와 심볼의 프로퍼티 및 메서드에 대한 커스텀 구성을 제공하는 extension 파일. 더 자세한 정보는 <doc:Adding-Structure-to-Your-Documentation-Pages>에서 확인하세요.
-- in-source 주석을 보완하는 extension 파일과 개념적인 콘텐츠를 지원하는 article. 더 자세한 정보는 [Adding Supplemental Content to a Documentation Catalog](https://developer.apple.com/documentation/xcode/adding-supplemental-content-to-a-documentation-catalog)에서 확인하세요.
+- 프레임워크를 소개하고 최상위 심볼을 정렬하는 랜딩 페이지와 심볼의 프로퍼티 및 메서드에 대한 커스텀 구성을 제공하는 확장 파일. 더 자세한 정보는 <doc:Adding-Structure-to-Your-Documentation-Pages>에서 확인하세요.
+- in-source 주석을 보완하는 확장 파일과 개념적인 콘텐츠를 지원하는 article. 더 자세한 정보는 <doc:Adding-Supplemental-Content-to-a-Documentation-Catalog>에서 확인하세요.
 - 단계별 인터랙티브 콘텐츠를 통해 개발자에게 프레임워크의 API를 가르칠 수 있는 튜토리얼. 더 자세한 정보는 [Building an Interactive Tutorial](https://developer.apple.com/documentation/DocC/building-an-interactive-tutorial)에서 확인하세요.
 - 문서에서 사용할 이미지 및 비디오와 같은 리소스 파일
 
@@ -60,4 +60,4 @@ Product > Build Documentation을 선택하여 온디맨드 문서를 빌드하�
 
 > Note: 기존 프레임워크 프로젝트의 경우, 문서 카탈로그를 추가한 후에만 빌드 설정이 나타납니다. Swift 패키지에는 빌드 설정을 사용할 수 없습니다.
 
-DocC는 `xcodebuild` 와도 통합됩니다. 따라서 커맨드라인에서도 문서를 빌드할 수 있습니다. 이는 문서 빌드를 지속적인 CI(Continuous Intergration) 프로세스에 통합하려는 경우에 유용합니다. 더 자세한 정보는 [Distributing Documentation to External Developers](https://developer.apple.com/documentation/xcode/distributing-documentation-to-external-developers)에서 확인하세요.
+DocC는 `xcodebuild` 와도 통합됩니다. 따라서 커맨드라인에서도 문서를 빌드할 수 있습니다. 이는 문서 빌드를 지속적인 CI(Continuous Intergration) 프로세스에 통합하려는 경우에 유용합니다. 더 자세한 정보는 <doc:Distributing-Documentation-to-External-Developers>에서 확인하세요.

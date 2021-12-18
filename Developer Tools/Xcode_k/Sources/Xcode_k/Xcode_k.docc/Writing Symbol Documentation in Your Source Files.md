@@ -164,4 +164,4 @@ mutating public func eat(_ food: Food, quantity: Int) throws -> Int {
 
 또한, DocC에는 심볼에 대해 더욱 풍부한 문서를 만들 수 있는 기능이 포함되어 있습니다.
 - 프레임워크에서 다른 심볼을 참조할 때 *code voice* 대신 *심볼 링크(symbol links)*를 사용합니다. 심볼 링크를 사용하면 문서 뷰어에서 프레임워크의 문서를 빠르게 탐색할 수 있으며, Quick Help를 사용하면 팝오버와 인스펙터에서 프레임워크 문서를 표시할 수 있습니다. 더 자세한 정보는 [Formatting Your Documentation Content](https://developer.apple.com/documentation/xcode/formatting-your-documentation-content)를 확인하세요.
-- *확장 파일(extension files)*을 사용해 코드 예제 및 이미지와 같은 심볼에 대한 추가 콘텐츠를 제공하고, in-source 주석의 크기를 관리가능한 수준으로 유지하세요. 더 자세한 정보는 [Adding Supplemental Content to a Documentation Catalog](https://developer.apple.com/documentation/xcode/adding-supplemental-content-to-a-documentation-catalog)를 확인하세요.
+- *확장 파일(extension files)*을 사용해 코드 예제 및 이미지와 같은 심볼에 대한 추가 콘텐츠를 제공하고, in-source 주석의 크기를 관리가능한 수준으로 유지하세요. 더 자세한 정보는 <doc:Adding-Supplemental-Content-to-a-Documentation-Catalog>를 확인하세요.
