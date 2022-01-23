@@ -25,6 +25,7 @@ currentLocation=`pwd`
 export DOCC_HTML_DIR="${currentLocation}/dist"
 
 cd swift-docc
+swift build
 for path in ${paths}
 do 
     name=`echo ${path##*/}`
