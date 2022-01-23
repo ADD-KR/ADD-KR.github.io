@@ -5,6 +5,9 @@ sudo xcode-select -switch /Applications/Xcode.app
 git clone https://github.com/apple/swift-docc.git
 
 schemeJSON=`xcodebuild -list -json`
+echo `pwd`
+echo ${schemeJSON}
+echo =========================================================
 schemes=`echo ${schemeJSON} | jq '.workspace.schemes'`
 
 #index.html 만들때 scheme list export 추가 예정
