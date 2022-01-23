@@ -25,5 +25,6 @@ jobs:
       run: sh hosting.sh
     - name: git commit & push
       run: |
+        git add -A
         git commit -m "Updated: `date +'%Y-%m-%d %H:%M:%S'`"
         git push
