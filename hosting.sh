@@ -29,5 +29,6 @@ for path in ${paths}
 do 
     name=`echo ${path##*/}`
     name=`echo ${name%.doccarchive}`
+    mkdir -p ../docs/${name}
     swift run docc process-archive transform-for-static-hosting ${path} --output-path ../docs/${name} --hosting-base-path ADD-KR/${name}
 done
