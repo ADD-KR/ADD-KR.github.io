@@ -13,7 +13,7 @@
 ## 문서 사용 방법
 
 1. 패키지별 doccarchive를 다운로드하여 Xcode의 문서 뷰어에서 직접 사용
-2. ~~Web에 호스팅된 페이지를 통해 사용~~ (준비중입니다)
+2. Web에 호스팅된 [페이지](https://add-kr.github.io)를 통해 사용
 
 ## 작업 단계
 
@@ -31,6 +31,8 @@
    - 검수 시 문제가 발생한다면 [문서 작성 가이드](documentation-guide.md)에 맞게 수정해야 합니다.
    - Organization의 구성원만 병합할 수 있는 권한을 가집니다.
      - 구성원으로서 함께하고 싶으시다면 acone1128@gmail.com로 메일 주세요 :)
+6. main 브랜치에 push가 완료되면 [cd workflow](.github/workflows/cd.yml)가 실행되어 hosting 브랜치에 doccbuild 결과가 push되어 [web page](https://add-kr.github.io)에서 확인 가능해집니다.
+   - 자세한 호스팅 작동 과정은 [링크](https://daeun28.github.io/github/pages를/사용한/docc/호스팅/post32/)의 글을 참고해주세요.
 
 ## Contributor
 

@@ -65,6 +65,8 @@ Xcode > Developer Documentation의 구조를 따릅니다.
     - 애플 홈페이지에서 다운로드한 이미지 이름에 `~dark` 또는 `~light` 키워드가 포함된 경우에만 시스템 설정을 변경해 두 이미지 모두 다운로드한 후, 리소스로 추가하면 됩니다.
     - 반드시 모든 Appearance 모드를 지원할 필요는 없으나, 기본적으로는 dark 모드를 사용해야 합니다.
   - ex) Distributing-Documentation-to-External-Developers-figure2~light.png
+- 패키지를 추가할 때에는, 반드시 상대경로를 사용해 `xcodebuild -list` 명령어를 어떤 환경에서 사용해도 모든 패키지가 출력될 수 있도록 합니다.
+  - 자세한 내용은 기존에 추가되어 있는 그룹 및 패키지를 확인해주세요.
 
 ### 링킹
 
