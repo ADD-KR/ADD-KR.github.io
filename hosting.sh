@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-brew install jq
+brew outdated jq || brew install jq
 sudo xcode-select -switch /Applications/Xcode.app
 git clone https://github.com/apple/swift-docc.git
 

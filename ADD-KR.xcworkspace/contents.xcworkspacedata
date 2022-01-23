@@ -2,46 +2,46 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "group:Developer Tools"
-      name = "Developer Tools">
+      location = "container:"
+      name = "App Frameworks">
       <FileRef
-         location = "group:/Users/daeunkim/Documents/GitHub/ADD-KR/Developer Tools/Xcode_k">
+         location = "group:App Frameworks/UIKit_k">
       </FileRef>
       <FileRef
-         location = "group:/Users/daeunkim/Documents/GitHub/ADD-KR/Developer Tools/DocC_k">
+         location = "group:App Frameworks/Foundation_k">
       </FileRef>
    </Group>
    <Group
       location = "container:"
-      name = "App Frameworks">
-      <FileRef
-         location = "group:App Frameworks/Foundation_k">
-      </FileRef>
-      <FileRef
-         location = "group:App Frameworks/UIKit_k">
-      </FileRef>
-   </Group>
-   <Group
-      location = "group:App Services"
       name = "App Services">
       <FileRef
-         location = "group:/Users/daeunkim/Documents/GitHub/ADD-KR/App Services/BackgroundTasks_k">
+         location = "group:App Services/BackgroundTasks_k">
       </FileRef>
       <FileRef
-         location = "group:/Users/daeunkim/Documents/GitHub/ADD-KR/App Services/CoreData_k">
+         location = "group:App Services/CoreData_k">
       </FileRef>
       <FileRef
-         location = "group:/Users/daeunkim/Documents/GitHub/ADD-KR/App Services/UserNotification_k">
+         location = "group:App Services/UserNotification_k">
       </FileRef>
    </Group>
    <Group
-      location = "group:Media"
-      name = "Media">
+      location = "container:"
+      name = "Developer Tools">
       <FileRef
-         location = "group:/Users/daeunkim/Documents/GitHub/ADD-KR/Media/AVFoundation_k">
+         location = "group:Developer Tools/DocC_k">
       </FileRef>
       <FileRef
-         location = "group:/Users/daeunkim/Documents/GitHub/ADD-KR/Media/AVFAudio_k">
+         location = "group:Developer Tools/Xcode_k">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Media">
+      <FileRef
+         location = "group:Media/AVFAudio_k">
+      </FileRef>
+      <FileRef
+         location = "group:Media/AVFoundation_k">
       </FileRef>
    </Group>
 </Workspace>
