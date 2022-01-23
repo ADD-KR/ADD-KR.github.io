@@ -10,21 +10,20 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - name: grant sudo permission
-      run: chmod 777 hosting.sh
-    - name: Install Cocoapods
-      run: sh hosting.sh
-
-  pushToHostingBranch:
-    needs: hosting
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: setup git config
+      with:
+        fetch-depth: 0
+    - name: setup git
       run: |
         git config --global user.name 'DAEUN28'
         git config --global user.email 'acone1128@gmail.com'
+        git pull origin hosting
+        git checkout -t origin/hosting
+        git merge main
+    - name: grant sudo permission
+      run: chmod 777 hosting.sh
+    - name: update hosting files
+      run: sh hosting.sh
     - name: git commit & push
       run: |
         git commit -m "Updated: `date +'%Y-%m-%d %H:%M:%S'`"
-        git push origin hosting
+        git push
