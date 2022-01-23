@@ -16,6 +16,7 @@ jobs:
       run: |
         git config --global user.name 'DAEUN28'
         git config --global user.email 'acone1128@gmail.com'
+        git config pull.rebase false
         git pull origin hosting
         git checkout -t origin/hosting
         git merge main
