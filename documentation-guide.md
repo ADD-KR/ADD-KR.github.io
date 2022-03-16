@@ -78,7 +78,7 @@ Xcode > Developer Documentation의 구조를 따릅니다.
   - ex) \[Writing Symbol Documentation in Your Source Files](https://developer.apple.com/documentation/xcode/writing-symbol-documentation-in-your-source-files)
 - ~~외부 프레임워크의 문서를 링크하는 경우,~~ 준비중(DocC에 해당 기능이 추가된 후 반영 예정)
 - 이미지를 링크하는 경우, 표시되는 이름은 `figure + 문서 내에서 이미지 순서`만 사용하고, 링크는 파일명만 사용하세요.
-  - ex)![figure2](Distributing-Documentation-to-External-Developers-figure2)
+  - ex)`![figure2](Distributing-Documentation-to-External-Developers-figure2)`
 
 ## Tips(Optional)
 
