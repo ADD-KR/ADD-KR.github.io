@@ -32,12 +32,12 @@ Xcode > Developer Documentation의 구조를 따릅니다.
     - Sources
       - 프레임워크 이름과 같은 이름의 디렉토리(ex: Xcode_k)
         - Definition
-          - 소스 코드 파일이 프레임워크의 디렉토리 구조와 같은 구조로 관리됩니다.
+          - 소스 코드 파일은 프레임워크의 디렉토리 구조와 같은 구조로 관리됩니다.
           - 소스 코드는 문서화를 위한 심볼 정의가 목적이기 때문에, 빌드 성공을 위해 빈 구현 또는 유효하지 않은 구현이 포함될 수 있습니다.
           - 확장 파일이 필요없는 경우, 소스 문서 주석으로 문서화합니다.
           - 소스 코드 파일이 없으면 빌드에 실패하기 때문에 소스 코드 파일이 없는 프레임워크의 경우 빈 파일인 `draft.swift`를 포함합니다.
         - 문서 카탈로그(ex: Xcode_k.docc)
-          - 프레임워크의 따른 디렉토리 구조를 가집니다.
+          - 프레임워크에 따른 디렉토리 구조를 가집니다.
           - 아티클이 아닌 하위 문서를 가지는 API 컬렉션 또는 심볼 문서는 구조화를 위해 같은 이름의 디렉토리를 생성한 후 해당 디렉토리의 하위에 같은 이름의 문서를 생성합니다.
           - Resources
             - 이미지, 동영상 등 문서에 포함되는 리소스입니다.
@@ -76,11 +76,11 @@ Xcode > Developer Documentation의 구조를 따릅니다.
 - 동일한 프레임워크의 문서를 링크하는 경우, DocC 문법에 따라 링크하세요.
 - 번역 전인 문서를 링크하는 경우, 애플 개발자 공식 문서의 링크를 사용하세요.
   - ex) \[Writing Symbol Documentation in Your Source Files](https://developer.apple.com/documentation/xcode/writing-symbol-documentation-in-your-source-files)
-- ~~외부 프레임워크의 문서를 링크하는 경우,~~ 준비중
+- ~~외부 프레임워크의 문서를 링크하는 경우,~~ 준비중(DocC에 해당 기능이 추가된 후 반영 예정)
 - 이미지를 링크하는 경우, 표시되는 이름은 `figure + 문서 내에서 이미지 순서`만 사용하고, 링크는 파일명만 사용하세요.
   - ex)![figure2](Distributing-Documentation-to-External-Developers-figure2)
 
 ## Tips(Optional)
 
 - 문서 업데이트 이력은 커밋 이력으로 확인 가능합니다.
-- ~~배포 방법 및 단계는 다음 블로그 글을 참고해주세요.~~ 준비중
+- 배포 방법 및 단계는 [블로그](https://daeun28.github.io/github_pages를_사용한_docc_호스팅/post32/)를 참고해주세요.
