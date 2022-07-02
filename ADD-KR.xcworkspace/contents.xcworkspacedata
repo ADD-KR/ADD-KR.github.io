@@ -5,6 +5,9 @@
       location = "container:"
       name = "App Frameworks">
       <FileRef
+         location = "group:App Frameworks/StoreKit_k">
+      </FileRef>
+      <FileRef
          location = "group:App Frameworks/Swift_k">
       </FileRef>
       <FileRef
