@@ -8,6 +8,7 @@ const schemeJSON = {
       "CoreData_k",
       "DocC_k",
       "Foundation_k",
+      "StoreKit_k",
       "Swift_k",
       "UIKit_k",
       "UserNotification_k",
