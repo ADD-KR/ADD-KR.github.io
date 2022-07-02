@@ -8,7 +8,7 @@ schemeJSON=`xcodebuild -list -json`
 echo `pwd`
 echo ${schemeJSON}
 echo =========================================================
-echo ${schemeJSON} > docs/scheme.json
+echo "const schemeJSON = ${schemeJSON}" > docs/metadata/scheme.js
 schemes=`echo ${schemeJSON} | jq '.workspace.schemes'`
 
 # 작은 변경사항으로 인해 전체 scheme의 docbuild가 이루어지는 문제. 개선 예정
